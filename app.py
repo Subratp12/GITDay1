@@ -9,5 +9,6 @@ response = ec2.run_instances(
     InstanceType='t3.micro',
     KeyName='boto3-key',  # Ensure this key pair exists in your AWS account
     MinCount=1,
+    Desired=1,
     MaxCount=1
 )
